@@ -1,0 +1,84 @@
+/* font-family: 'Orbitron', sans-serif;
+font-family: 'Press Start 2P', cursive; */
+
+.html {
+  background: url('images/background.jpg') no-repeat center fixed;
+  background-size: cover;
+}
+
+body {
+  background-color: rgba(255, 255, 255, 0.75);
+  margin: 30px auto;
+  width: 900px;
+  padding: 15px 30px;
+  border-radius: 40px;
+  text-align: center;
+}
+
+h1,
+h2 {
+  font-family: 'Press Start 2P', cursive;
+  color: #D30000;
+}
+
+p,
+input {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 500;
+}
+
+.box {
+  margin: 15px;
+}
+
+button {
+  display: inline-block;
+
+  font-family: 'Raleway', sans-serif;
+  font-weight: 500;
+  font-size: 18px;
+  text-decoration: none;
+
+  color: rgba(190, 28, 28, 1);
+  background-color: transparent;
+  border: 1px solid rgba(190, 28, 28, 1);
+  border-radius: 100px;
+
+  padding: 10px 30px;
+  margin: 5px;
+
+  background-size: 200% 100%;
+  background-image: linear-gradient(to right, transparent 50%, rgba(190, 28, 28, 1) 50%);
+  transition: background-position .3s cubic-bezier(0.19, 1, 0.22, 1) .1s, color .5s ease 0s, background-color .5s ease;
+}
+
+button:hover {
+  color: rgba(255, 255, 255, 1);
+  background-color: rgba(190, 28, 28, 1);
+  background-position: -100% 100%
+}
+
+img {
+  width: 75px;
+}
+
+.box-img {
+  width: 150px;
+  padding: 5px;
+  transition: all 1s;
+}
+
+.box-img:hover {
+  transform: scale(1.1) rotate(360deg);
+}
+
+.title {
+  width: 800px;
+}
+
+input {
+  padding: 3px 5px;
+  border-radius: 20px;
+  border: 1px solid rgba(190, 28, 28, 1);
+  font-size: 16px;
+}

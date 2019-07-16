@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html class='html'>
+
+<head>
+  <title>Mario Kart Item Box Opener</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css?family=Press+Start+2P|Raleway&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <img class='title' src="https://fontmeme.com/permalink/190712/a31bce9a78a583109d452beb40886c43.png" alt="MARIO KART">
+  <h1>Item Box Opener</h1>
+  <hr>
+  <p>Enter a racer position:</p>
+  <p>Position: <input id='position' type="number" min='1' max='12'></p>
+  <button id='rand-pos'>Random Position</button>
+
+  <p id='error'></p>
+
+  <p><button id='plus-1' class='box'><img class=box-img src="images/mario-kart-item-box.png" alt="item box">
+      <p class='btn-text'>Open 1</p>
+    </button><button id='plus-10' class='box'><img class=box-img src="images/mario-kart-item-box.png" alt="item box">
+      <p class='btn-text'>Open 10</p>
+    </button></p>
+
+  <hr>
+
+  <h2>Results:</h2>
+  <p>
+    <strong>TOTALS -> </strong>
+    Bananas: <span id="banana">0</span> |
+    Green Shells: <span id="shell">0</span> |
+    Stars: <span id="star">0</span> |
+    Golden Mushrooms: <span id="mushroom">0</span> |
+    Bullet Bills: <span id="bill">0</span> |
+    <button id='clear'>Clear</button>
+  </p>
+
+  <hr>
+
+  <p id='results'></p>
+  <!-- Load JavaScript -->
+  <script src='main.js'></script>
+</body>
+
+</html>
