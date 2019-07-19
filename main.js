@@ -17,6 +17,7 @@ document.getElementById('plus-1').addEventListener('click', openBox);
 document.getElementById('plus-10').addEventListener('click', plus10);
 document.getElementById('plus-100').addEventListener('click', plus100);
 document.getElementById('plus-custom').addEventListener('click', plusCustom);
+document.getElementById('until-mush').addEventListener('click', untilMushroom);
 document.getElementById('clear').addEventListener('click', clearItems);
 
 //functions
@@ -100,6 +101,14 @@ function plusCustom() {
   }
 }
 
+function untilMushroom() {
+  while(true) {
+    openBox();
+    if(numMush == 1){
+      break;
+    }
+  }
+}
 
 //random position
 function randPos() {
