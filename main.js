@@ -15,6 +15,8 @@ let resultsEl = document.getElementById('results');
 document.getElementById('rand-pos').addEventListener('click', randPos);
 document.getElementById('plus-1').addEventListener('click', openBox);
 document.getElementById('plus-10').addEventListener('click', plus10);
+document.getElementById('plus-100').addEventListener('click', plus100);
+document.getElementById('plus-custom').addEventListener('click', plusCustom);
 document.getElementById('clear').addEventListener('click', clearItems);
 
 //functions
@@ -84,6 +86,20 @@ function plus10() {
     openBox();
   }
 }
+
+function plus100() {
+  for (let n = 0; n < 100; n++) {
+    openBox();
+  }
+}
+
+function plusCustom() {
+  let times = Number(document.getElementById('custom-open').value);
+  for (let n = 0; n < times; n++) {
+    openBox();
+  }
+}
+
 
 //random position
 function randPos() {
